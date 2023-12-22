@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import ChatApp from './components/Chat/ChatApp';
 import "./App.css";
 
-const socket = io.connect("http://127.0.0.1:3001");
+const socket = io.connect("http://127.0.0.1:3002");
 
 const App = () => {
   const [user, setUser] = useState('');
