@@ -17,7 +17,6 @@ const ChatApp = ({ socket, username, room }) => {
             };
     
             await socket.emit("send_message", messageData);
-            setMessageList((list) => [...list, messageData]);
             setMessage("");
         }
     };
